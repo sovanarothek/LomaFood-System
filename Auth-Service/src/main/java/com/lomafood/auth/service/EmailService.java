@@ -19,22 +19,20 @@ public class EmailService {
             "Hello,\n\n" +
             "Your OTP code is: " + otp + "\n\n" +
             "This code expires in 5 minutes.\n\n" +
-            "If you did not request this, ignore this email.\n\n" +
             "LomaFood Team"
         );
         mailSender.send(message);
     }
 
-    public void sendPasswordResetEmail(String toEmail, String resetToken) {
+    public void sendPasswordResetLink(String toEmail, String resetLink) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(toEmail);
         message.setSubject("LomaFood - Password Reset Request");
         message.setText(
             "Hello,\n\n" +
-            "Use the token below to reset your password:\n\n" +
-            resetToken + "\n\n" +
-            "This token expires in 15 minutes.\n\n" +
-            "If you did not request this, ignore this email.\n\n" +
+            "Click the link below to reset your password:\n\n" +
+            resetLink + "\n\n" +
+            "This link expires in 15 minutes.\n\n" +
             "LomaFood Team"
         );
         mailSender.send(message);

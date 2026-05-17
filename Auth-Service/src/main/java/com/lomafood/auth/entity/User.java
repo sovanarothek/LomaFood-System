@@ -21,7 +21,6 @@ public class User {
     private String email;
 
     private String password;
-
     private String name;
 
     @Enumerated(EnumType.STRING)
@@ -29,13 +28,9 @@ public class User {
     private Role role;
 
     private boolean enabled;
-
     private boolean emailVerified;
-
-    // OAuth2 (Google)
-    private String providerId;      // Google sub id
-    private String provider;        // "google"
-
+    private String providerId;
+    private String provider;
     private LocalDateTime createdAt;
 
     @PrePersist

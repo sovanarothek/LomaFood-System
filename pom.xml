@@ -26,6 +26,7 @@
         <module>service-discovery</module>
         <module>Auth-Service</module>
         <module>User-Service</module>
+        <module>Restaurant-Service</module>
         <module>api-gateway</module>
     </modules>
 

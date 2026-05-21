@@ -27,6 +27,7 @@
         <module>Auth-Service</module>
         <module>User-Service</module>
         <module>Restaurant-Service</module>
+        <module>Order-Service</module>
         <module>api-gateway</module>
     </modules>
 

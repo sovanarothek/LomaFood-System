@@ -29,6 +29,7 @@
         <module>Restaurant-Service</module>
         <module>Order-Service</module>
         <module>Payment-Service</module>
+        <module>Rider-Service</module>
         <module>api-gateway</module>
     </modules>
 
